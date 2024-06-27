@@ -3,7 +3,7 @@ public:
     int findCenter(vector<vector<int>>& edges) {
 int n=edges.size();
         vector<int> node_freq(n+2,0);
-        for(int i=0;i<edges.size();i++){
+        for(int i=0;i<n;i++){
             node_freq[edges[i][0]]++;
             node_freq[edges[i][1]]++;
 
