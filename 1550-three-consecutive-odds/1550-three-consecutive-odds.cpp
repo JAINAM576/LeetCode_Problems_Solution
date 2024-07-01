@@ -6,7 +6,7 @@ public:
 
      int e=0;
      int n=arr.size();
-     if(n<=2)return false;
+    
      while(e<n){
      
         while(e<n && arr[e]%2==0){
