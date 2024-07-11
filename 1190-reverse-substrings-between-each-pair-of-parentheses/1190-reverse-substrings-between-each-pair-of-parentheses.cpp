@@ -26,16 +26,12 @@ st.pop();
         if(noOfOpening==0 && c!='('){
             s2+=c;
         }
-        else if(c=='('){
-                s1.push_back(c);
-                st.push(s1);
-                noOfOpening++;
+                else{
+                     if(c=='(')noOfOpening++;
 
-        }
-        else{
-              s1.push_back(c);
-                st.push(s1);
-        }
+                    s1+=c;
+                    st.push(s1);
+                }
             }
         }
       
